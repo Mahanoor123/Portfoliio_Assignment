@@ -1,0 +1,636 @@
+@import url("About.css");
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "lato";
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+#navbar{
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: white;
+    box-shadow: 2px 2px 3px rgb(19, 19, 19);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar .logo{
+    font-size: 1.4rem;
+    border: 1px solid rgb(47, 199, 233);
+    padding: 2px 4px;
+    border-radius: 0.3rem;
+    text-shadow: 2px 2px 4px rgb(47, 199, 233);
+}
+#navbar #nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar #nav li{
+    list-style: none;
+}
+#navbar #nav li a{
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: rgb(47, 199, 233);
+    padding: 0 0.6rem;
+    font-weight: 300;
+    transition: 0.3s;
+}
+#navbar #nav li a:hover{
+    color: rgb(248, 248, 248);
+}
+#navbar #nav li a i{
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+    /* This is Hero Section */
+
+#hero_section{
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("Assets/Images/banner1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+}
+#hero_section .searchbar{
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+}
+#hero_section .searchbar i{
+    font-size: 1.8rem;
+    color: rgb(47, 199, 233);
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.7rem 0 0 0.7rem;
+}
+#hero_section .searchbar input{
+    width: 40%;
+    outline: none;
+    border: none;
+    border-radius: 0 0.7rem 0.7rem 0;
+    border: 2px solid  rgb(47, 199, 233);
+    background: transparent;
+    padding-left: 1rem;
+    color: rgb(255, 255, 255);
+}
+#hero_section .searchbar input:hover{
+    box-shadow: 1px 1px 4px  rgb(47, 199, 233);
+}
+#hero_section .hero_content{
+    margin: 40px 23%;
+    text-align: center;
+}
+#hero_section .hero_content h1{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+#hero_section .hero_content h2{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 400;
+}
+#hero_section .hero_content span{
+    color:  rgb(47, 199, 233);
+    font-style: italic;
+}
+#hero_section .hero_content .cta{
+    cursor: pointer;
+    outline: none;
+    border-style: none;
+    padding: 0.4rem 0.6rem;
+    margin-top: 2rem;
+    border-radius: 0.6rem 0.6rem 0 0.6rem;
+    background-color:  rgb(47, 199, 233); 
+    transition: 0.3s; 
+}
+#hero_section .hero_content .cta:hover{
+    box-shadow: 1px 1px 4px  rgb(47, 199, 233);
+}
+#hero_section .social_icons{
+    position: absolute;
+    color:  rgb(255, 255, 255);
+    left: 45%;
+    bottom: 1.5rem;
+}
+#hero_section .social_icons i{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#hero_section .social_icons i:hover{
+    color: rgb(47, 199, 233);
+}
+
+        /* This is services Section */
+
+#service_section{
+    height: 80vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    border-top: 2px 2px 5px rgb(47, 199, 233);
+    box-shadow: 1px 1px 4px  rgb(47, 199, 233);
+}
+#service_section .service_head{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 2rem 0;
+    font-size: 1.4rem;
+}
+#service_section .cards_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+#service_section .cards_section .card_1{
+    height: 45vh;
+    width: 20vw;
+    background-color:  rgb(47, 199, 233);
+    border-radius: 0.6rem 0.6rem 0 0.6rem;
+    margin: 0 1rem;
+    padding: 0.4rem;
+    box-shadow: 1px 1px 4px  rgb(47, 199, 233);
+    backdrop-filter: blur(30px);
+    transition: 0.2s;
+}
+#service_section .cards_section .card_1 h1{
+    font-size: 1.4rem;
+    font-weight: 500;
+    height: 15vh;
+    text-align: center;
+}
+#service_section .cards_section .card_1 p{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+#service_section .cards_section .card_1 .rate{
+    display: flex;
+    justify-content: center;
+}
+#service_section .cards_section .card_1 .rate i{
+    font-size: 0.8rem;
+    padding: 0.6rem 0.2rem;
+}
+#service_section .cards_section .card_1 button{
+    outline: none;
+    border-style: none;
+    width: 100%;
+    padding: 0.4rem 0;
+    border-radius: 0.6rem 0.6rem 0 0.6rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(47, 199, 233);
+    cursor: pointer;
+}
+#service_section .cards_section .card_1 button:hover{
+    background-color:  rgb(47, 199, 233);
+    color: black;
+    border: 1px solid black;
+}
+#service_section .cards_section .card_1:hover{
+    transform: scale(1.1);
+}
+
+        /* This is skill section */
+
+#Skills_section{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+
+}
+#Skills_section .skill_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 3rem 0;
+}
+#Skills_section .skill_head h1{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+}
+#Skills_section .skill_head p{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+#Skills_section .skills_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#Skills_section .skills_row .skill_card{
+    margin: 2rem 1rem;
+    height: 20vh;
+    width: 18vw;
+    border: 2px solid  rgb(47, 199, 233);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: 0.4s;
+}
+#Skills_section .skills_row .skill_card .icon_img {
+    padding: 1.2rem 0 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(47, 199, 233);
+    transition: 0.3s;
+}
+#Skills_section .skills_row .skill_card .icon_img i{
+    background-color: rgba(92, 200, 224, 0.2);
+    border: 1px solid rgb(47, 199, 233);
+    /* box-shadow: 1px 1px 4px rgb(47, 199, 233); */
+    border-radius: 50%;
+    padding: 0.5rem 0.7rem;
+}
+#Skills_section .skills_row .skill_card .skill_name{
+    color:  hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+#Skills_section .skills_row .skill_card .skill_text{
+    opacity: 0;
+    text-align: center;
+    font-size: 0.6rem;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    position: absolute;
+    top: 2.3rem;
+    left: 1rem;
+}
+#Skills_section .skills_row .skill_card button{
+    opacity: 0;
+    outline: none;
+    border-style: none;
+    background-color: rgb(47, 199, 233);
+    border-radius: 0.4rem 0.4rem 0rem 0.4rem;
+    padding: 0.2rem 0.8rem;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 4rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#Skills_section .skills_row .skill_card:hover{
+    box-shadow: 1px 1px 8px rgb(47, 199, 233);
+}
+#Skills_section .skills_row .skill_card:hover button{
+    opacity: 100%;
+}
+#Skills_section .skills_row .skill_card:hover .skill_text{
+    opacity: 100%;
+}
+#Skills_section .skills_row .skill_card:hover .icon_img{
+    transform: translateY(-70px);
+}
+#Skills_section .skills_row .skill_card:hover .skill_name{
+    transform: translateY(-70px);
+}
+#Skills_section .skills_row .skill_card button:hover{
+    border: 1px solid rgb(47, 199, 233);
+    background: transparent;
+    color: rgb(47, 199, 233);
+}
+
+        /* This is Project section */
+
+#projects_section{
+    height: 120vh;
+    background-color: black;
+    box-shadow: -1px -1px 4px rgba(47, 199, 233, 0.5);
+}
+#projects_section .pro_section_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+#projects_section .pro_section_btn button{
+    cursor: pointer;
+    outline: none;
+    border-style: none;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.6rem 0.6rem 0 0.6rem;
+    background-color:  rgb(47, 199, 233); 
+    transition: 0.3s; 
+}
+#projects_section .pro_section_btn button:hover{
+    box-shadow: 1px 1px 4px rgb(47, 199, 233);
+}
+#projects_section .project_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 3rem 0;
+}
+#projects_section .projects_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-content: center;
+}
+#projects_section .projects_row .pro_card{
+    width: 25vw;
+    height: 35vh;
+    background-color: rgb(13, 13, 13);
+    border-radius: 0.2rem;
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+#projects_section .projects_row .project_card1{
+    background-image: linear-gradient(rgba(0 ,0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("Assets/project1.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#projects_section .projects_row .project_card2{
+    background-image: linear-gradient(rgba(0 ,0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("Assets/project2.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#projects_section .projects_row .project_card3{
+    background-image: linear-gradient(rgba(0 ,0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("Assets/project3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#projects_section .projects_row .project_card4{
+    background-image: linear-gradient(rgba(0 ,0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("Assets/project4.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#projects_section .projects_row .project_card5{
+    background-image: linear-gradient(rgba(0 ,0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("Assets/project5.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#projects_section .projects_row .project_card6{
+    background-image: linear-gradient(rgba(0 ,0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("Assets/project6.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-style: normal;
+}
+#projects_section .projects_row .pro_card .project_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 3.5rem 0 0.4rem 0;
+    transition: 0.3s;
+}
+#projects_section .projects_row .pro_card .project-desc{
+    font-size: 0.6rem;
+    text-align: center;
+    font-weight: 300;
+    color: white;
+    padding: 0 2rem 0 2rem;
+}
+#projects_section .projects_row .pro_card .see_more{
+    font-size: 0.7rem;
+    font-weight: 300;
+    outline: none;
+    border-style: none;
+    background-color: rgb(47, 199, 233);
+    border-radius: 0.4rem 0.4rem 0rem 0.4rem;
+    padding: 0.1rem 1.2rem;
+    margin: 0.5rem 6rem 0 6rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#projects_section .projects_row .pro_card a .see_more:hover{
+    box-shadow: 2px 2px 4px rgb(47, 199, 233);
+}
+#projects_section .projects_row .pro_card .rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin: 1.5rem 1rem 0 1rem;
+}
+#projects_section .projects_row .pro_card .rate .star i{
+    font-size: 0.6rem;
+}
+#projects_section .projects_row .pro_card .rate .star i:hover{
+    color: rgb(47, 199, 233);
+}
+#projects_section .projects_row .pro_card .rate .thumb{
+    color: rgb(47, 199, 233);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+#projects_section .projects_row .pro_card .rate .thumb i{
+    background-color: rgba(92, 200, 224, 0.2);
+    border-radius: 50%;
+    padding: 0.2rem 0.4rem;
+}
+#projects_section .projects_row .pro_card .rate .thumb::before{
+    content: '125k';
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+#projects_section .projects_row .pro_card .pro_content{
+    transition: 0.3s;
+    opacity: 0;
+}
+#projects_section .projects_row .pro_card:hover .pro_content{
+    opacity: 100%;
+}
+#projects_section .projects_row .pro_card:hover{
+    transform: scale(1.1);
+}
+
+        /* This is Contact Section */
+
+#contact_section{
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-top: 1px solid rgb(47, 199, 233);
+}
+#contact_section .contact_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    color: white;
+    padding: 2rem 0;
+}
+#contact_section .contact{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 45vh;
+}
+#contact_section .contact .form, .direct_call{
+    display: flex;
+    flex-direction: column;
+}
+#contact_section .contact .form .inputt{
+    outline: none;
+    border-style: none;
+    margin: 0.5rem 0;
+    border: 1px solid rgb(47, 199, 233);
+    border-radius: 0.4rem 0.4rem 0rem 0.4rem;
+    width: 15rem;
+    background: transparent;
+    padding: 0.2rem 0.5rem;
+    transition: 0.3s;
+}
+#contact_section .contact .form .inputt:hover{
+    box-shadow: 2px 2px 4px rgb(47, 199, 233);
+}
+#contact_section .contact .form .send{
+    font-size: 0.7rem;
+    font-weight: 300;
+    outline: none;
+    border-style: none;
+    background-color: rgb(47, 199, 233);
+    border-radius: 0.4rem 0.4rem 0rem 0.4rem;
+    padding: 0.2rem 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#contact_section .contact .form .send:hover{
+    box-shadow: 2px 2px 4px rgb(47, 199, 233);
+}
+#contact_section .contact .direct_call .email, .cont, .web{
+    border: 1px solid rgb(47, 199, 233);
+    border-radius: 0.4rem 0.4rem 0rem 0.4rem;
+    margin: 0.5rem 0;
+    padding: 0.3rem 0.8rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#contact_section .contact .direct_call i{
+    color: rgb(47, 199, 233);
+    padding-right: 0.2rem;
+}
+#contact_section .contact .direct_call input{
+    outline: none;
+    border-style: none;
+    background: transparent;
+    cursor: pointer;
+}
+#contact_section .contact .direct_call .email:hover, .cont:hover, .web:hover{
+    box-shadow: 2px 2px 4px rgb(47, 199, 233);
+}
+
+        /* This is Footer section */
+
+#footer_section{
+    background-color: rgb(0, 0, 0, 0.8);
+    height: 50vh;
+}
+#footer_section .footer_bg{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 45vh;
+}
+#footer_section .footer_bg{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+#footer_section .footer_bg .foot_logo h2{
+    margin: 4rem 0;
+    font-size: 1.4rem;
+    border: 1px solid rgb(47, 199, 233);
+    object-fit: cover;
+    padding: 2px 4px;
+    border-radius: 0.3rem;
+    text-shadow: 2px 2px 4px rgb(47, 199, 233);
+    color: white;
+}
+#footer_section .footer_bg h1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(47, 199, 233);
+}
+#footer_section .footer_bg .foot_links ol{
+    padding-top: 0.4rem;
+    list-style: none;
+}
+#footer_section .footer_bg .foot_links ol i{
+    color: rgb(47, 199, 233);
+    font-size: 0.8rem;
+    padding-right: 0.2rem;
+}
+#footer_section .footer_bg .foot_links a{
+    text-decoration: none;
+    color: white;
+    padding: 0.2rem 0rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+#footer_section .footer_bg .portfolio ol{
+    padding-top: 0.4rem;
+    list-style: none;
+}
+#footer_section .footer_bg .portfolio ol a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+#footer_section .footer_bg .foot_cont_details a{
+    display: block;
+    text-decoration: none;
+    padding: 0.2rem 0rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: white;
+}
+#footer_section .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+#footer_section .copyright span{
+    color: rgb(47, 199, 233);
+    font-style: italic;
+    padding: 0 0.2rem;
+}
+#footer_section .copyright .rights{
+    font-size: 0.8rem;
+    color: white;
+    font-style: normal;   
+}
+
+
+

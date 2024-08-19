@@ -1,0 +1,107 @@
+@import url("style.css");
+
+#about_section{
+    height: 60vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+}
+.about_me{
+    height: 45vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about_text{
+    color: white;
+}
+.about_text span{
+    color: rgb(47, 199, 233);
+    font-style: italic;
+}
+.about_img img{
+    width: 14rem;
+    border: 0.2rem solid rgb(47, 199, 233);
+    border-radius: 50%;
+}
+.about_me h2{
+    padding-top: 0.4rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.about_me .about_para{
+    text-align: justify;
+    font-weight: 300;
+    font-size: 0.8rem;
+    padding-top: 0.3rem;
+}
+.about_me .cta{
+    cursor: pointer;
+    outline: none;
+    border-style: none;
+    padding: 0.4rem 0.6rem;
+    margin-top: 1rem;
+    border-radius: 0.6rem 0.6rem 0 0.6rem;
+    background-color:  rgb(47, 199, 233); 
+    transition: 0.3s; 
+}
+.about_me .cta:hover{
+    box-shadow: 1px 1px 4px  rgb(47, 199, 233);
+}
+.social_icons{
+    position: absolute;
+    left: 45%;
+    bottom: 8%;
+}
+.social_icons i{
+    color: white;
+    font-size: 1.2rem;
+    padding: 0 0.2rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.social_icons i:hover{
+    color: rgb(47, 199, 233);
+}
+
+#my_exp_section{
+    height: 200vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.909);
+    color: white;
+}
+#my_exp_section .my_exp_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 2rem 0; 
+    font-size: 1.4rem;
+}
+#my_exp_section .row1{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+}
+#my_exp_section .row1 .img img{
+    width: 30vw;
+}
+#my_exp_section .row1 .row_content{
+    width: 40vw;
+    margin: 50px auto;
+}
+#my_exp_section .row1 .row_content h1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(47, 199, 233);
+}
+#my_exp_section .row1 .row_content h2{
+    font-size: 0.8rem;
+}
+#my_exp_section .row1 .row_content p{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+#my_exp_section .row1 .row_content ul{
+    font-size: 0.8rem;
+    font-weight: 200;
+}
